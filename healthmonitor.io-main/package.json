@@ -1,0 +1,52 @@
+{
+  "name": "iot-health-monitor",
+  "version": "1.0.0",
+  "description": "IoT-Based Intelligent Health Monitoring and Alert System - Firebase Firestore Backend",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "jest --testTimeout=10000",
+    "build": "echo 'No build step required for Node.js backend'",
+    "postinstall": "echo 'Dependencies installed successfully'",
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "firebase-admin": "^12.0.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "node-fetch": "^2.6.7",
+    "socket.io": "^4.6.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "iot",
+    "healthcare",
+    "health-monitoring",
+    "medical",
+    "esp32",
+    "realtime",
+    "alert-system",
+    "firebase",
+    "firestore"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true
+}

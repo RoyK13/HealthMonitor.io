@@ -1,0 +1,17 @@
+{
+  "$schema": "https://railway.app/schema.json",
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "node backend/server.js",
+    "restartPolicy": "always",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 60,
+    "healthcheckInterval": 30,
+    "timeout": 180
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
